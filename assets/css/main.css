@@ -55,6 +55,11 @@ h2 {
     border-bottom: 2px #928b8b solid;
 }
 
+.navbar .fa.fa-arrow-right,
+.navbar .fa.fa-arrow-left {
+    font-size: 25px;
+}
+
 .navbar.navbarAtas {
     position: fixed;
     top: 0;
@@ -72,15 +77,8 @@ h2 {
     margin-right: 150px;
 }
 
-.navbar .fa.fa-arrow-right {
-    font-size: 25px;
-    /* padding-top: 5px; */
-}
-
 .navbar.navbarAtas .showLeftBar {
     margin-right: 10px;
-    /* border-radius: 100px;
-    background-color: #7561be; */
 }
 
 .navbar.navbarAtas .home {
