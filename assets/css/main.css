@@ -14,7 +14,7 @@ body {
     height: 10000px;
     width: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #7561be;
+    background-color: #F29E7D;
 }
 
 ul {
@@ -70,12 +70,12 @@ a {
     float: left;
     display: block;
     width: 20%;
+    top: 0;
     left: 0;
     transition: 0.5s all;
     height: 100vh;
     border-right: 2px #928b8b solid;
     border-bottom: 2px #928b8b solid;
-    /* margin-top: */
 }
 
 .navbar .fa.fa-arrow-right,

@@ -21,4 +21,25 @@ $(document).ready(function() {
         $('.chosen').removeClass('chosen');
         $(this).addClass('chosen');
     });
+
+    // FOR STICKY HEADER
+
+    // var scr1 = window.pageYOffset;
+    // window.onscroll = function() {
+    //     var scr2 = window.pageYOffset;
+    //     if (scr1 > scr2) {
+    //         var int = setInterval(function() {
+    //             var scr3 = window.pageYOffset;
+    //             if (scr2 > scr3) {
+    //                 $('.navbar.navbarAtas').css('top', '0px');
+    //                 clearInterval(int);
+    //             } else {
+    //                 $('.navbar.navbarAtas').css('top', '-100px');
+    //             }
+    //         }, 2000);
+    //     } else {
+    //         $('.navbar.navbarAtas').css('top', '-100px');
+    //     }
+    //     scr1 = scr2;
+    // }
 });
