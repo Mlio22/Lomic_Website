@@ -43,10 +43,12 @@ $(document).ready(function() {
 
                 } else {
                     $('.navbar.navbarAtas').css('top', '-100px');
+                    $('.navbar.navbarKiri').css('left', '-20%');
                     console.log('ganteng3');
                     clearInterval(inter);
 
                 }
+                scr3 = scr2;
                 console.log(scr3);
                 console.log('ganteng');
                 clearInterval(inter);
