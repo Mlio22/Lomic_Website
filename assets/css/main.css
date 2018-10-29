@@ -21,6 +21,7 @@ ul {
     margin: 0;
     list-style-type: none;
     padding: 5px;
+    /* transition: 0.5s all; */
 }
 
 li {
@@ -30,8 +31,23 @@ li {
     font-weight: 400;
 }
 
+li:hover {
+    color: #aa9d9d;
+}
+
+li.chosen:hover {
+    color: #15151b;
+}
+
 h2 {
     font-weight: 500;
+    cursor: default;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    cursor: default;
 }
 
 
@@ -46,18 +62,24 @@ h2 {
 }
 
 .navbar.navbarKiri {
-    position: relative;
+    position: fixed;
     float: left;
     display: block;
     width: 20%;
+    left: 0;
     transition: 0.5s all;
     height: 100vh;
     border-right: 2px #928b8b solid;
     border-bottom: 2px #928b8b solid;
+    /* margin-top: */
 }
 
 .navbar .fa.fa-arrow-right,
 .navbar .fa.fa-arrow-left {
+    font-size: 25px;
+}
+
+.arrow.fa {
     font-size: 25px;
 }
 
@@ -150,6 +172,11 @@ h2 {
     transition-property: all;
 }
 
+.navbar.navbarKiri.notShowed {
+    left: -20%;
+    transition: 0.5s all;
+}
+
 
 /* IF THE LEFT BAR IS SHOWED */
 
@@ -201,6 +228,7 @@ h2 {
 .navbar.navbarAtas.showed .searchBar {
     margin-left: 50px;
     margin-right: 50px;
+    padding: 10px;
     transition-duration: 500ms;
     transition-property: all;
 }
@@ -220,11 +248,6 @@ h2 {
 
 /* TEST */
 
-.navbar.navbarKiri.notShowed {
-    width: 0%;
-    transition: 0.5s all;
-}
-
-ul.notShowed {
-    display: none;
+.chosen {
+    color: #15151b;
 }
