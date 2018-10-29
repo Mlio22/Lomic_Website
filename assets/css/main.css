@@ -44,6 +44,10 @@ h2 {
     cursor: default;
 }
 
+h2 a:hover {
+    cursor: pointer;
+}
+
 a {
     color: inherit;
     text-decoration: none;
@@ -148,9 +152,12 @@ a {
     padding: 10px;
     transition-duration: 500ms;
     transition-property: all;
+    /* display: inline; */
+    width: min-content;
 }
 
-.navbar.navbarAtas .searchBar input {
+.navbar.navbarAtas .searchBar input,
+.fa-search {
     padding: 3px;
     margin-top: 6px;
     background-color: #8cc58c;
@@ -245,9 +252,13 @@ a {
     transition-property: all;
 }
 
+.chosen {
+    color: #15151b;
+}
+
 
 /* TEST */
 
-.chosen {
-    color: #15151b;
+span {
+    margin-right: 50px;
 }
