@@ -7,6 +7,7 @@ $(document).ready(function() {
             $('.navbar.navbarAtas').addClass('showed');
             $('.navbar.navbarKiri.notShowed').removeClass('notShowed');
             $('.isi.notShowed').removeClass('notShowed');
+            $('.judul h2.notShowed').removeClass('notShowed');
             // $('.navbar.navbarKiri ul').removeClass('notShowed');
             console.log('berhasil kanan');
         } else {
@@ -14,6 +15,7 @@ $(document).ready(function() {
             $('.navbar.navbarAtas.showed').removeClass('showed');
             $('.navbar.navbarKiri').addClass('notShowed');
             $('.isi').addClass('notShowed');
+            $('.judul h2').addClass('notShowed');
             // $('.navbar.navbarKiri ul').addClass('notShowed');
             console.log('berhasil kiri');
         }
@@ -21,6 +23,12 @@ $(document).ready(function() {
 
     $('li').on('click', function() {
         $('.chosen').removeClass('chosen');
+        $('.navbar.navbarKiri').addClass('notShowed');
+        $('.navbar.navbarAtas.showed').removeClass('showed');
+        $('.fa.fa-arrow-left').removeClass('fa-arrow-left').addClass('fa-arrow-right');
+        $('.isi').addClass('notShowed');
+        $('.judul h2').addClass('notShowed');
+
         $(this).addClass('chosen');
     });
 
