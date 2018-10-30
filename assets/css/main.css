@@ -11,7 +11,7 @@
 body {
     margin: 0;
     padding: 0;
-    height: 10000px;
+    height: 1200px;
     width: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #F29E7D;
@@ -54,6 +54,10 @@ a {
     cursor: default;
 }
 
+span {
+    margin-right: 50px;
+}
+
 
 /* Classes */
 
@@ -71,6 +75,7 @@ a {
     display: block;
     width: 20%;
     top: 0;
+    z-index: 1000;
     left: 0;
     transition: 0.5s all;
     height: 100vh;
@@ -104,6 +109,7 @@ a {
 .navbar.navbarAtas {
     position: fixed;
     width: 100%;
+    z-index: 999;
     top: 0;
     float: left;
     margin-left: 0%;
@@ -259,10 +265,13 @@ a {
 
 /* TEST */
 
-span {
-    margin-right: 50px;
+.isi {
+    position: relative;
+    left: 20%;
+    top: 64px;
+    transition: 0.5s all;
 }
 
-.important {
-    top: 0 !important;
+.isi.notShowed {
+    left: 0%;
 }
