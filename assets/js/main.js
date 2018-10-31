@@ -8,7 +8,9 @@ $(document).ready(function() {
             $('.navbar.navbarKiri.notShowed').removeClass('notShowed');
             $('.isi.notShowed').removeClass('notShowed');
             $('.judul h2.notShowed').removeClass('notShowed');
+            $('.barIsi.showed').removeClass('showed');
             // $('.navbar.navbarKiri ul').removeClass('notShowed');
+            // $('barIsi').addClass('showed');
             console.log('berhasil kanan');
         } else {
             $('.fa-arrow-left').removeClass('fa-arrow-left').addClass('fa-arrow-right');
@@ -16,6 +18,7 @@ $(document).ready(function() {
             $('.navbar.navbarKiri').addClass('notShowed');
             $('.isi').addClass('notShowed');
             $('.judul h2').addClass('notShowed');
+            $('.barIsi').addClass('showed');
             // $('.navbar.navbarKiri ul').addClass('notShowed');
             console.log('berhasil kiri');
         }

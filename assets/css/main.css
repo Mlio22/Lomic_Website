@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     transition: 0.5s all;
+    /* overflow-x: hidden; */
 }
 
 
@@ -118,6 +119,7 @@ span {
 
 .isi {
     position: relative;
+    display: block;
     left: 20%;
     top: 64px;
     margin-top: 20px;
@@ -128,6 +130,8 @@ span {
 
 .navMateri {
     position: fixed;
+    float: Left;
+    display: block;
     margin-top: 50px;
     width: 20%;
     border-right: 1px rgb(97, 83, 83) solid;
@@ -334,4 +338,20 @@ span {
 
 /* TEST */
 
-.barIsi {}
+.barIsi {
+    /* margin-top: 20%; */
+    /* margin-left: 20%; */
+    position: relative;
+    left: 21.5%;
+    float: left;
+    display: block;
+    margin-top: 80px;
+    background-color: #796363;
+    color: white;
+    width: 57%;
+    height: 1200px;
+}
+
+.barIsi.showed {
+    width: 77.5%;
+}
