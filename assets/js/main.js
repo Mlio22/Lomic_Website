@@ -21,15 +21,24 @@ $(document).ready(function() {
         }
     });
 
-    $('li').on('click', function() {
+    $('li.navbarLists').on('click', function() {
         $('.chosen').removeClass('chosen');
+        $(this).addClass('chosen');
+        if ($('.chosen a').html() === 'Home') {
+            $('.olimName h2').html('Lembaga...');
+        } else {
+            $('.olimName h2').html($('.chosen a').html());
+        }
         $('.navbar.navbarKiri').addClass('notShowed');
         $('.navbar.navbarAtas.showed').removeClass('showed');
         $('.fa.fa-arrow-left').removeClass('fa-arrow-left').addClass('fa-arrow-right');
         $('.isi').addClass('notShowed');
         $('.judul h2').addClass('notShowed');
+    });
 
-        $(this).addClass('chosen');
+    $('li.materiLists').on('click', function() {
+        $('.active').removeClass('active');
+        $(this).addClass('active');
     });
 
     // FOR STICKY HEADER

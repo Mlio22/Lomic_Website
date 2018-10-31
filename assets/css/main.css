@@ -15,25 +15,29 @@ body {
     height: 12000px;
     width: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: rgba(247, 234, 229, 0.774);
+    background-color: #ffffff;
 }
 
-ul {
+ul.navbarList {
     margin: 0;
     list-style-type: none;
     padding: 5px;
     /* transition: 0.5s all; */
 }
 
-li {
+li.navbarLists {
     margin: 5px;
     padding: 10px;
     color: white;
     font-weight: 400;
 }
 
-li:hover {
+li.navbarLists:hover {
     color: #aa9d9d;
+}
+
+li.navbarLists.chosen {
+    color: #15151b;
 }
 
 li.chosen:hover {
@@ -62,10 +66,6 @@ span {
 
 /* Classes */
 
-.navbarLists {
-    border-bottom: 1px #928b8b solid;
-}
-
 .navbar {
     background-color: #65df65;
 }
@@ -84,13 +84,8 @@ span {
     border-bottom: 2px #928b8b solid;
 }
 
-.navbar .fa.fa-arrow-right,
-.navbar .fa.fa-arrow-left {
-    font-size: 25px;
-}
-
-.arrow.fa {
-    font-size: 25px;
+.navbarLists {
+    border-bottom: 1px #928b8b solid;
 }
 
 .arrow {
@@ -102,6 +97,68 @@ span {
     color: rgb(123, 209, 112);
     transition: 500ms all;
     background-color: #7561be;
+}
+
+.arrow.fa {
+    font-size: 25px;
+}
+
+.navbar .fa.fa-arrow-right,
+.navbar .fa.fa-arrow-left {
+    font-size: 25px;
+}
+
+.judul h2 {
+    width: 80%;
+    text-align: center;
+    transition: 0.5s all;
+    color: white;
+    background-color: rgb(0, 0, 0);
+}
+
+.isi {
+    position: relative;
+    left: 20%;
+    top: 64px;
+    margin-top: 20px;
+    margin-left: 20px;
+    transition: 0.5s all;
+    height: 90vh;
+}
+
+.navMateri {
+    position: fixed;
+    margin-top: 50px;
+    width: 20%;
+    border-right: 1px rgb(97, 83, 83) solid;
+    height: 80vh;
+}
+
+.materiList {
+    margin-top: 10px;
+    list-style-type: none;
+    text-align: center;
+    /* background-color: #b8b0b0; */
+}
+
+.materiLists {
+    padding: 5px;
+    margin-left: 5px;
+    color: #9499db;
+}
+
+.materiLists.active,
+.materiLists.active:hover {
+    color: #000000;
+}
+
+.materiLists:hover {
+    color: #5f67da;
+    cursor: default;
+}
+
+.materiLists.first {
+    margin-top: calc((80vh - 483px)/2);
 }
 
 
@@ -153,6 +210,12 @@ span {
     transition-property: all;
 }
 
+
+/* .judul h2.notShowed {
+    width: 100%;
+    transition: 0.5s all;
+} */
+
 .navbar.navbarAtas .searchBar {
     margin-left: 150px;
     margin-right: 100px;
@@ -189,6 +252,11 @@ span {
 .navbar.navbarKiri.notShowed {
     left: -20%;
     transition: 0.5s all;
+}
+
+.isi.notShowed {
+    left: 0%;
+    margin-left: 0;
 }
 
 
@@ -259,47 +327,11 @@ span {
     transition-property: all;
 }
 
-.chosen {
-    color: #15151b;
-}
-
-.isi {
-    position: relative;
-    left: 20%;
-    top: 64px;
-    margin-top: 20px;
-    margin-left: 20px;
-    transition: 0.5s all;
-}
-
-.isi.notShowed {
-    left: 0%;
-    margin-left: 0;
+.isi.showed {
+    top: 0px;
 }
 
 
 /* TEST */
 
-
-/* .judul {} */
-
-.judul h2 {
-    width: 80%;
-    text-align: center;
-    transition: 0.5s all;
-    color: white;
-    background-color: rgb(0, 0, 0);
-}
-
-.judul h2.notShowed {
-    width: 100%;
-    transition: 0.5s all;
-}
-
-.navMateri {
-    position: fixed;
-    margin-top: 40px;
-    width: 20%;
-    border-right: 1px rgb(97, 83, 83) solid;
-    height: 70vh;
-}
+.barIsi {}
