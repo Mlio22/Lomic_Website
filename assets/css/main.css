@@ -132,10 +132,10 @@ span {
     position: fixed;
     float: Left;
     display: block;
-    margin-top: 50px;
+    margin-top: 75px;
     width: 20%;
     border-right: 1px rgb(97, 83, 83) solid;
-    height: 80vh;
+    height: 77.5vh;
 }
 
 .materiList {

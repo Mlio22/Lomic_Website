@@ -37,6 +37,8 @@ $(document).ready(function() {
         $('.fa.fa-arrow-left').removeClass('fa-arrow-left').addClass('fa-arrow-right');
         $('.isi').addClass('notShowed');
         $('.judul h2').addClass('notShowed');
+        $('.barIsi').addClass('showed');
+
     });
 
     $('li.materiLists').on('click', function() {
