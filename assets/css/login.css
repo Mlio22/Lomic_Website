@@ -17,7 +17,7 @@ body {
 }
 
 .container {
-    background: #00ff00;
+    background: #5adb5a;
     height: 350px;
     width: 50%;
     margin-left: 25%;
@@ -28,7 +28,7 @@ body {
 .penukar {
     height: 60px;
     width: 100%;
-    background: #ff00ff;
+    background: #504c50;
     border-radius: 50px 50px 0px 0px;
 }
 
