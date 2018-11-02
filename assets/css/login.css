@@ -1,7 +1,11 @@
 * {
-    transition: 0.5s ease-in-out all;
+    transition: 0.4s all;
     padding: 0;
     margin: 0;
+}
+
+input:invalid {
+    border-bottom: 2px red solid !important;
 }
 
 html {
@@ -13,12 +17,12 @@ body {
     padding: 0;
     margin: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background: #f0f0f0;
+    background: #829eeb;
 }
 
 .container {
-    background: #5adb5a;
     height: 350px;
+    background: #f0f0f0;
     width: 50%;
     margin-left: 25%;
     margin-top: 300px;
@@ -26,9 +30,9 @@ body {
 }
 
 .penukar {
-    height: 60px;
+    height: 50px;
     width: 100%;
-    background: #504c50;
+    background: #5adb5a;
     border-radius: 50px 50px 0px 0px;
 }
 
@@ -39,11 +43,15 @@ body {
 }
 
 .pengubahTampilan.active {
-    background: #00f0ff;
+    background: #3bb13b
+}
+
+.pengubahTampilan.active>h2:hover {
+    color: #000;
 }
 
 .tampilKiri {
-    background: #ffffff;
+    /* background: #ffffff; */
     border-top-left-radius: 50px;
     float: left;
     border-right: 2px #ff0000 solid;
@@ -63,7 +71,7 @@ body {
 }
 
 .tampilKanan {
-    background: black;
+    /* background: black; */
     float: right;
     border-top-right-radius: 50px;
     border-left: #ff0000 2px solid;
@@ -84,4 +92,38 @@ body {
 
 h2.tulisanPenukar {
     margin-top: 10px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: calc(100% - 60px);
+    padding: 10px;
+    background: transparent;
+    border: 0;
+    border-bottom: 2px #929292 solid;
+    margin: 0 10px;
+}
+
+.loginBox.firstBox {
+    margin-top: 75px;
+}
+
+.loginBox {
+    width: 95%;
+    margin: 0 2.5%;
+}
+
+form {
+    position: relative;
+}
+
+label {
+    position: relative;
+    left: 15px;
+    top: 25px;
+}
+
+label.active {
+    left: 0;
+    top: 0;
 }
