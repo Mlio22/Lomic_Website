@@ -26,26 +26,62 @@ body {
 }
 
 .penukar {
-    height: 50px;
+    height: 60px;
     width: 100%;
     background: #ff00ff;
     border-radius: 50px 50px 0px 0px;
 }
 
+.pengubahTampilan {
+    width: calc(50% - 2px);
+    text-align: center;
+    height: 50px;
+}
+
+.pengubahTampilan.active {
+    background: #00f0ff;
+}
+
 .tampilKiri {
     background: #ffffff;
-    width: calc(50% - 2px);
-    height: 50px;
     border-top-left-radius: 50px;
     float: left;
     border-right: 2px #ff0000 solid;
 }
 
+.tampilKiri>h2 {
+    color: black;
+}
+
+
+/* .tampilKiri:hover {
+    background: black;
+} */
+
+.tampilKiri:hover>h2 {
+    color: white;
+}
+
 .tampilKanan {
-    background: #000000;
-    width: calc(50% - 2px);
-    height: 50px;
+    background: black;
     float: right;
     border-top-right-radius: 50px;
     border-left: #ff0000 2px solid;
+}
+
+.tampilKanan>h2 {
+    color: white;
+}
+
+
+/* .tampilKanan:hover {
+    background: white;
+} */
+
+.tampilKanan:hover>h2 {
+    color: #000000;
+}
+
+h2.tulisanPenukar {
+    margin-top: 10px;
 }
