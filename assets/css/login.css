@@ -20,6 +20,53 @@ body {
     background: #829eeb;
 }
 
+h2.tulisanPenukar {
+    margin-top: 10px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: calc(100% - 60px);
+    padding: 10px;
+    background: transparent;
+    border: 0;
+    border-bottom: 2px #929292 solid;
+    margin: 0 10px;
+}
+
+form {
+    position: relative;
+}
+
+label {
+    position: relative;
+    left: 15px;
+    top: 25px;
+}
+
+input:invalid {
+    border-bottom: 2px red solid !important;
+}
+
+input:focus {
+    border: 0;
+}
+
+label.active {
+    left: 0;
+    top: 0;
+}
+
+input[type="submit"] {
+    width: 25%;
+    height: 40px;
+    margin-left: calc(75%/2);
+    margin-top: 30px;
+}
+
+
+/* Classes */
+
 .container {
     height: 350px;
     background: #f0f0f0;
