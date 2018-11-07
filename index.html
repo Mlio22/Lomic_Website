@@ -14,61 +14,61 @@
 
 <body>
 
-</body>
-<div class="container">
-    <div class="penukar">
-        <div class="pengubahTampilan tampilKiri active">
-            <h2 class="tulisanPenukar">Login</h2>
+    <div class="container">
+        <div class="penukar">
+            <div class="pengubahTampilan tampilKiri active">
+                <h2 class="tulisanPenukar">Login</h2>
+            </div>
+            <div class="pengubahTampilan tampilKanan">
+                <h2 class="tulisanPenukar">Daftar</h2>
+            </div>
         </div>
-        <div class="pengubahTampilan tampilKanan">
-            <h2 class="tulisanPenukar">Daftar</h2>
-        </div>
+        <form action="#" class="formLogin" method="POST">
+            <!-- <div class="loginBox firstBox">
+                <label for="masukkanLogin">username atau password</label>
+                <input type="text" name="masukkanLogin" id="inputLogin" required>
+            </div>
+            <div class="loginBox">
+                <label for="passwordLogin">password</label>
+                <input type="password" name="passwordLogin" id="password" required>
+            </div>
+            <input type="submit" value="Login"> -->
+
+            <div class="daftarBox firstBox">
+                <label for="namaLengkap">Nama Lengkap</label>
+                <input type="text" name="namaLengkap" id="namaLengkapDaftar" required minlength="5">
+                <div class="garisBawah"></div>
+                <!-- <br /> -->
+            </div>
+
+            <div class="daftarBox">
+                <label for="email">E -mail</label>
+                <input type="email" name="email" id="emailDaftar" required>
+                <div class="garisBawah"></div>
+                <!-- <br /> -->
+
+
+            </div>
+
+            <div class="daftarBox">
+                <label for="username">username</label>
+                <input type="text" name="username" id="usernameDaftar" required>
+                <div class="garisBawah"></div>
+                <!-- <br /> -->
+
+            </div>
+
+            <div class="daftarBox">
+                <label for="passwordDaftar">Password</label>
+                <input type="password" name="passwordDaftar" id="password" required>
+                <div class="garisBawah"></div>
+                <!-- <br /> -->
+
+            </div>
+
+            <input type="submit" value="Daftar!">
+        </form>
     </div>
-    <form action="#" class="formLogin" method="POST">
-        <!-- <div class="loginBox firstBox">
-            <label for="masukkanLogin">username atau password</label>
-            <input type="text" name="masukkanLogin" id="inputLogin" required>
-        </div>
-        <div class="loginBox">
-            <label for="passwordLogin">password</label>
-            <input type="password" name="passwordLogin" id="password" required>
-        </div>
-        <input type="submit" value="Login"> -->
-
-        <div class="daftarBox firstBox">
-            <label for="namaLengkap">Nama Lengkap</label>
-            <input type="text" name="namaLengkap" id="namaLengkapDaftar" required minlength="5">
-            <div class="garisBawah"></div>
-            <!-- <br /> -->
-        </div>
-
-        <div class="daftarBox">
-            <label for="email">E -mail</label>
-            <input type="email" name="email" id="emailDaftar" required>
-            <div class="garisBawah"></div>
-            <!-- <br /> -->
-
-
-        </div>
-
-        <div class="daftarBox">
-            <label for="username">username</label>
-            <input type="text" name="username" id="usernameDaftar" required>
-            <div class="garisBawah"></div>
-            <!-- <br /> -->
-
-        </div>
-
-        <div class="daftarBox">
-            <label for="passwordDaftar">Password</label>
-            <input type="password" name="passwordDaftar" id="password" required>
-            <div class="garisBawah"></div>
-            <!-- <br /> -->
-
-        </div>
-
-        <input type="submit" value="Daftar!">
-    </form>
-</div>
+</body>
 
 </html>
