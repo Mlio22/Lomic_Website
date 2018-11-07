@@ -181,3 +181,11 @@ input[type="submit"] {
         margin: 3px 10px;
     }
 }
+
+.formInput.nonActive {
+    display: none;
+}
+
+.formInput.active {
+    display: inline;
+}
