@@ -16,6 +16,7 @@ body {
     margin: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background: #829eeb;
+    overflow: hidden;
 }
 
 h2.tulisanPenukar {
@@ -23,12 +24,13 @@ h2.tulisanPenukar {
 }
 
 input[type="text"],
-input[type="password"] {
+input[type="password"],
+input[type="email"] {
     width: calc(100% - 60px);
     padding: 10px;
     background: transparent;
     border: 0;
-    border-bottom: 2px #929292 solid;
+    /* border-bottom: 2px #929292 solid; */
     margin: 0 10px;
 }
 
@@ -40,19 +42,26 @@ label {
     position: relative;
     left: 15px;
     top: 25px;
+    font-family: palatino;
+    font-size: 17px;
 }
 
 input:invalid {
-    border-bottom: 2px red solid !important;
+    border: 0;
+    /* border-bottom: 2px red solid !important; */
+    box-shadow: none;
 }
 
-input:focus {
+
+/* input:invalid input:focus {
     border: 0;
-}
+} */
 
 label.active {
-    left: 0;
+    left: 10px;
     top: 0;
+    font-size: 15px;
+    color: #6545f7;
 }
 
 input[type="submit"] {
@@ -60,17 +69,20 @@ input[type="submit"] {
     height: 40px;
     margin-left: calc(75%/2);
     margin-top: 30px;
+    background: #5adb5a;
+    border: 0;
+    border-radius: 20px;
 }
 
 
 /* Classes */
 
 .container {
-    height: 350px;
+    height: 450px;
     background: #f0f0f0;
     width: 50%;
     margin-left: 25%;
-    margin-top: 300px;
+    margin-top: 250px;
     border-radius: 50px;
 }
 
@@ -93,6 +105,10 @@ input[type="submit"] {
 
 .loginBox.firstBox {
     margin-top: 75px;
+}
+
+.daftarBox.firstBox {
+    margin-top: 40px;
 }
 
 .loginBox {
@@ -131,4 +147,37 @@ input[type="submit"] {
 
 .tampilKanan:hover>h2 {
     color: #000000;
+}
+
+.garisBawah {
+    height: 2px;
+    width: calc(100% - 60px);
+    background: #757575;
+    margin: 3px 10px;
+    padding: 0 10px;
+}
+
+.garisBawah.error {
+    background: red;
+}
+
+.garisBawah.error.active {
+    background: red;
+}
+
+.garisBawah.active {
+    background: #6545f7;
+    animation-name: garis;
+    animation-duration: 0.25s;
+}
+
+@keyframes garis {
+    0% {
+        width: 50%;
+        margin: 3px 25%;
+    }
+    100% {
+        width: calc(100% - 60px);
+        margin: 3px 10px;
+    }
 }
