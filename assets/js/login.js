@@ -1,5 +1,13 @@
 $(document).ready(function() {
 
+
+    // PEMBERSIHAN INPUT JIKA CTRL + R
+    $('input#inputLogin').val('');
+    $('input#password').val('');
+    $('input#namaLengkapDaftar').val('');
+    $('input#emailDaftar').val('');
+    $('input#usernameDaftar').val('');
+
     // JIKA KOTAK PENUKAR DITEKAN
 
     $('.pengubahTampilan').on('click', function() {
@@ -23,6 +31,7 @@ $(document).ready(function() {
     $('input').on('focus', function() {
         $(this).siblings('label').addClass('active');
         $(this).siblings('.garisBawah').addClass('active');
+        $(this).siblings('.fa').addClass('active');
 
     });
 
@@ -32,9 +41,9 @@ $(document).ready(function() {
     $('input').on('focusout', function() {
         if ($(this).val() == '') {
             $(this).siblings('label').removeClass('active');
+            $(this).siblings('.garisBawah.active').removeClass('active');
+            $(this).siblings('.fa.active').removeClass('active');
         }
-        $(this).siblings('.garisBawah.active').removeClass('active');
-
     });
 
     // JIKA TERDAPAT ERROR INPUT SETELAH MENEKAN TOMBOL SUBMIT
@@ -42,11 +51,55 @@ $(document).ready(function() {
     $('input').on('invalid', function() {
         if ($(this).val() == '') {
             $(this).css('border', '0px');
-            $(this).siblings('.garisBawah.error').removeClass('error');
+            $(this).siblings('.garisBawah').removeClass('error');
         } else {
-            $(this).css('border', '0px');
-            $(this).siblings('.garisBawah').addClass('error');
+            // $(this).css('border', '0px');
+            $(this).siblings().addClass('error');
         }
     });
+
+    // ANIMASI HOVER TERHADAP INPUT
+
+    $('input').on('mouseover', function() {
+        $(this).siblings('label').addClass('onHover');
+        $(this).siblings('.garisBawah').addClass('onHover');
+
+    });
+
+    // KEBALIKANNYA
+
+    $('input').on('mouseout', function() {
+        $(this).siblings('label.onHover').removeClass('onHover');
+        $(this).siblings('.garisBawah.onHover').removeClass('onHover');
+    });
+
+    // CLICK TERHADAP LABEL UNTUK INPUTNYA
+
+    $('label').on('click', function() {
+        $(this).siblings('input').focus();
+    });
+
+    // $('.formInput').on('submit', function(e) {
+    //     var data = $(this).serialize();
+    //     console.log(data);
+    //     e.preventDefault();
+    //     $.ajax({
+    //         type: "POST",
+    //         url: "check.php",
+    //         data: data,
+    //         dataType: "JSON",
+    //         success: function(responseText) {
+    //             console.log(responseText);
+    //             console.log('success');
+
+
+    //         },
+    //         error: function(xhr) {
+    //             console.log(xhr.status);
+    //             console.log('failed');
+
+    //         }
+    //     });
+    // });
 
 });

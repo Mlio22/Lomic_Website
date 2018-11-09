@@ -15,8 +15,10 @@ body {
     padding: 0;
     margin: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background: #829eeb;
+    background-image: url('../img/blue-clouds-dawn-207385.jpg');
     overflow: hidden;
+    background-repeat: no-repeat;
+    /* background-size: ; */
 }
 
 h2.tulisanPenukar {
@@ -31,7 +33,7 @@ input[type="email"] {
     background: transparent;
     border: 0;
     /* border-bottom: 2px #929292 solid; */
-    margin: 0 10px;
+    margin: 0 0;
 }
 
 form {
@@ -44,6 +46,8 @@ label {
     top: 25px;
     font-family: palatino;
     font-size: 17px;
+    color: #000;
+    cursor: text;
 }
 
 input:invalid {
@@ -112,22 +116,24 @@ input[type="submit"] {
     margin-top: 40px;
 }
 
-.loginBox {
+
+/* .loginBox,
+.daftarBox {
     width: 95%;
     margin: 2.5% 2.5%;
-}
+} */
 
 .tampilKiri {
     /* background: #ffffff; */
     border-top-left-radius: 50px;
     float: left;
-    border-right: 2px #ff0000 solid;
+    border-right: 2px #000000 solid;
 }
 
 .tampilKanan {
     float: right;
     border-top-right-radius: 50px;
-    border-left: #ff0000 2px solid;
+    border-left: #000000 2px solid;
 }
 
 .tampilKiri>h2 {
@@ -189,4 +195,31 @@ input[type="submit"] {
 
 .formInput.active {
     display: inline;
+}
+
+.fa {
+    font-size: 20px;
+    position: relative;
+    left: -10px;
+    /* border-bottom: #829eeb 2px solid; */
+}
+
+.fa.active {
+    color: #829eeb;
+}
+
+.fa.error {
+    color: red;
+}
+
+label.onHover {
+    color: #6075a5;
+}
+
+.garisBawah.onHover {
+    background-color: #6075a5;
+}
+
+label.error {
+    color: red;
 }
