@@ -1,4 +1,3 @@
 <?php
-    echo($_GET['masukkanLogin']);
-    echo('halo');
+    echo($_POST['masukkanLogin']);
 ?>

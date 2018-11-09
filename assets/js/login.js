@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
-
     // PEMBERSIHAN INPUT JIKA CTRL + R
+
     $('input#inputLogin').val('');
     $('input#password').val('');
     $('input#namaLengkapDaftar').val('');
@@ -79,27 +79,28 @@ $(document).ready(function() {
         $(this).siblings('input').focus();
     });
 
-    // $('.formInput').on('submit', function(e) {
-    //     var data = $(this).serialize();
-    //     console.log(data);
-    //     e.preventDefault();
-    //     $.ajax({
-    //         type: "POST",
-    //         url: "check.php",
-    //         data: data,
-    //         dataType: "JSON",
-    //         success: function(responseText) {
-    //             console.log(responseText);
-    //             console.log('success');
+    // AJAX REQUEST 
 
+    $('.formInput').on('submit', function(e) {
+        var data = $(this).serialize();
+        console.log(data);
+        e.preventDefault();
+        $.ajax({
+            type: "POST",
+            url: "check.php",
+            data: data,
+            success: function(responseText) {
+                console.log(responseText);
+                console.log('success');
 
-    //         },
-    //         error: function(xhr) {
-    //             console.log(xhr.status);
-    //             console.log('failed');
-
-    //         }
-    //     });
-    // });
-
+                // if (responseText == 'lioa') {
+                //     window.location.href = "index..html";
+                // }
+            },
+            error: function(xhr) {
+                console.log(xhr.responseText);
+                console.log('failed');
+            }
+        });
+    });
 });
